@@ -73,6 +73,7 @@
             type: "POST",
             dataType: 'json',
             success: function (res) {
+                alert();
                 let arr = [];
                 let i = 0;
                 for(let o of res.data) {

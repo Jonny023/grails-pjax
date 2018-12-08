@@ -44,6 +44,7 @@ class IndexController {
                 content = "JS"
                 break
         }
+        println params.id
         render view: "/ajax", model: [type: params.id,content: "当前选中的是：${content?:''}"]
     }
 }
